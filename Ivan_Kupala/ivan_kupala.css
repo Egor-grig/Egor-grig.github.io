@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'TT Travels';
+    font-weight: 400;
+    background-color: #FFFEF6;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
+    padding: 6px 0;
+    list-style: none;
+    background-color: #BE0F0F; 
+    font-size: 32px;
+    font-weight: 600;
+}
+header nav ul li a{color: #fff;}
+
+.rectangle-head{
+    height: 25px;
+    background-image: url("../img/Group 1.png");
+    margin-bottom: 20px;
+}
+
+.href-container{
+    text-decoration: none;
+    margin-left: 80px;
+    font-size: 1.7vw;
+    list-style: none;
+    display: flex;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+main a{color: #272727;}
+main{
+    margin-bottom: 100px;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11vw;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #BE0F0F; /* Темно-красный фон */
+    width: 33vw;
+    margin-top: -15px;
+}
+
+.text-img-flex{
+    position: relative;  
+}
+
+.img-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-text{
+    font-size: 13.5px;
+    text-align: right;
+    font-weight: 600;
+    color: white;
+    padding: 24px;
+    margin-bottom: 2.3vw;
+    margin-left: 80px;
+}
+
+
+.suzdal-img-box{
+    width: 30vw;
+    margin-bottom: 27px;
+}
+
+.suzdal-img{
+    width: 210px;
+    position: absolute;
+    top: 40px;
+    left: -140px;
+}
+
+.kaluga-text{
+    display: inline-block;
+    font-family: 'SPSL RussiaChurch';
+    font-weight: 400;
+    font-size: 14vw;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 90px;
+}
+
+.stone-img{
+    position: absolute;
+    width: 16vw;
+    bottom: -150px;
+    right: 130px;
+    top: 20vw;
+}
+
+.second-container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.holiday-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.holiday-text{
+    font-family: 'SPSL RussiaChurch';
+    font-weight: 400;
+    font-size: 8.3vw;
+}
+
+.holidays{
+    width: 20vw;
+    height: 65px;
+}
+
+.holiday-text-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.3vw;
+}
+
+.left-text-container{
+    position: relative;
+    margin-right: 25px;
+
+}
+
+.left-text{
+    font-weight: 500;
+    font-size: 1.3vw;
+}
+
+.right-text-container ul{
+    margin-left: 35px;
+}
+
+.holiday-orn{
+    margin-bottom: 5.6vw;
+    width: 90vw;
+}
+
+.my-trip{
+    font-family: 'SPSL RussiaChurch';
+    font-size: 8.3vw;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.trip-container{
+    display: flex;
+}
+
+.trip-text{
+    width: 73vw;
+    font-size: 1.3vw;
+    margin-right: 50px;
+}
+
+.trip-photo-1{
+    height: 18vw;
+}
+
+.Shurovo-text{
+    font-size: 1.3vw;   
+}
+
+.Shurovo-photos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3vw;
+}
+
+.Shurovo-photo{
+    width: 44vw;
+}
+
+.section-two{
+    display: flex;
+    margin-bottom: 1.3vw;
+}
+.section-two-text-up{
+    width: 67vw;
+    margin-left: 1.3vw;
+    font-size: 1.3vw;
+    margin-bottom: 0.4vw;
+}
+.section-two-text-down{
+    width: 67vw;
+    margin-left: 1.3vw;
+    font-size: 1.3vw;
+}
+.section-two-photo{
+    width: 19.3vw;
+}
+
+.section-third-photos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3vw;
+}
+
+.section-third-photo{
+    width: 44vw;
+}
+
+.section-third-text{
+    font-size: 1.3vw;
+}
+
+.section-fourth-photos{
+    margin-top: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3vw;
+}
+
+.section-fourth-small{
+    width: 21vw;
+}
+.section-fourth-center{
+    width: 44vw;
+}
+.section-fourth-text{
+    font-size: 1.3vw;
+    margin-bottom: 1.3vw;
+}
+
+
+.video-rectangle{
+    width: 90vw;
+    margin-bottom: 5vw;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color:#272727;
+    height: 347px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 347px;
+}
+
+.footer-list{
+    line-height: 60px;
+}
+
+.footer-list li{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    list-style: none;
+}
+
+.logo{
+    margin-right: 170px; 
+}
+
+.social-net{
+    display: flex;
+    flex-direction: column;
+    /* align-self: center; */
+    align-items: center;
+    margin-top: 20px;
+}
+.telegram{
+    margin-bottom: 20px;
+}
+
+
+@media all and (max-width: 1440px){
+    
+
+}
