@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'SPSL RussiaChurch';
+    src: url("../fonts/spslrussiachurch.otf") format("truetype");
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-DemiBold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -399,7 +428,7 @@ footer{
     }
 
     .link-container-adapt p{
-        font-family: SPSL RussiaChurch;
+        font-family: 'SPSL RussiaChurch';
         font-size: 126px;
         line-height: 84%;
         text-align: right;
@@ -423,7 +452,7 @@ footer{
         width: 91vw;
     }
     .card-text{
-        font-family: TT Travels;
+        font-family: 'TT Travels';
         font-weight: 600;
         font-size: 16px;
         margin: 0;
@@ -447,14 +476,14 @@ footer{
     }
 
     .holiday-text{
-        font-family: SPSL RussiaChurch;
+        font-family: 'SPSL RussiaChurch';
         font-weight: 400;
         font-size: 96px;
         line-height: 100%;
     }
 
     .left-text{
-        font-family: TT Travels;
+        font-family: 'TT Travels';
         font-size: 16px;
         line-height: 129%;
         letter-spacing: 0%;
@@ -486,7 +515,7 @@ footer{
     }
 
     .my-trip-adapt p{
-        font-family: SPSL RussiaChurch;
+        font-family: 'SPSL RussiaChurch';
         font-weight: 400;
         font-size: 24vw;
         line-height: 100%;
@@ -604,7 +633,7 @@ footer{
     }
 
     .section-third-text{
-        font-family: TT Travels;
+        font-family: 'TT Travels';
         font-size: 16px;
         line-height: 100%;
         letter-spacing: 0%;
@@ -639,7 +668,7 @@ footer{
     }
 
     .section-fourth-text{
-        font-family: TT Travels;
+        font-family: 'TT Travels';
         font-size: 16px;
         line-height: 100%;
         letter-spacing: 0%;

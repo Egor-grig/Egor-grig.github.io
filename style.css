@@ -1,3 +1,32 @@
+@font-face {
+    font-family: 'SPSL RussiaChurch';
+    src: url("../fonts/spslrussiachurch.otf") format("truetype");
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-DemiBold.otf") format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'TT Travels';
+    src: url("../fonts/TT_Travels-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -671,7 +700,7 @@ footer{
         margin-bottom: 24px;
     }
     .for-you-adapt p{
-        font-family: SPSL RussiaChurch;
+        font-family: 'SPSL RussiaChurch';
         font-weight: 400;
         font-size: 21vw;
         line-height: 87px;
@@ -688,7 +717,7 @@ footer{
         flex-direction: column;
         justify-content: space-between;
         color: #fff;
-        font-family: TT Travels;
+        font-family: 'TT Travels';
         font-weight: 600;
         font-size: 2vw;
     }
@@ -720,7 +749,7 @@ footer{
     }
 
     .test-adapt p{
-        font-family: TT Travels;
+        font-family: 'TT Travels';
         font-weight: 600;
         font-size: 24px;
         margin-bottom: 16px;
