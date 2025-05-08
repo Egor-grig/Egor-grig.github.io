@@ -65,7 +65,7 @@ var swiper = new Swiper(".swiper", {
   loop: true,
   speed: 900,
   grabCursor: true,
-  allowTouchMove: false,
+  allowTouchMove: true,
   effect: "coverflow",
   coverflowEffect: {
     rotate: -10,

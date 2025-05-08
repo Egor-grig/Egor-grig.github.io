@@ -452,10 +452,27 @@ footer{
     display: none;
 }
 
+.video-adapt{
+    display: none;
+}
+
 @media (max-width: 640px){
     main{
         overflow: visible;
     }
+
+    .swiper-slide img{
+        width: 90vw;
+    }
+
+    .video-original{
+        display: none;
+    }
+
+    .video-adapt{
+        display: block;
+    }
+
     .navigation-container a{
         position:absolute;
         display: none;
@@ -711,28 +728,6 @@ footer{
         display: none;
     }
     
-    
-    text-link{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: #fff;
-        font-family: 'TT Travels';
-        font-weight: 600;
-        font-size: 2vw;
-    }
-    
-    text-link p{
-        width: 70%;
-    }
-    
-    text-link a{
-        background-color: #272727;
-        padding: 32px 12vw;
-        border-radius: 60px;
-        font-weight: 600;
-    }
-    
     .test-adapt{
         position: static;
         display: flex;
@@ -750,6 +745,7 @@ footer{
 
     .test-adapt p{
         font-family: 'TT Travels';
+        color: white;
         font-weight: 600;
         font-size: 24px;
         margin-bottom: 16px;
