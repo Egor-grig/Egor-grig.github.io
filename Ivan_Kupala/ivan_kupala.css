@@ -471,7 +471,7 @@ footer{
         font-size: 16px;
         line-height: 129%;
         letter-spacing: 0%;
-        width: 91vw;
+        width: 80vw;
     }
 
     .right-text-container ul .left-text{
@@ -485,6 +485,7 @@ footer{
     .holiday-orn-adapt{
         display: block;
         margin-bottom: 50px;
+        width: 100%;
     }
 
     .my-trip{
@@ -500,7 +501,7 @@ footer{
     .my-trip-adapt p{
         font-family: SPSL RussiaChurch;
         font-weight: 400;
-        font-size: 96px;
+        font-size: 24vw;
         line-height: 100%;
     }
 
@@ -522,6 +523,11 @@ footer{
 
     .trip-cont-adapt .par{
         margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .trip-text{
+        font-size: 16px;
     }
     
     .framed{
