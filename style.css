@@ -50,7 +50,7 @@ main{
 
 .navigation-ornament{
     position: fixed;
-    top: 45px;
+    top: 50px;
     /* position: absolute; */
     width: 100%;
     height: 25px;
@@ -449,6 +449,7 @@ footer{
         width: 90%;
         margin-bottom: 0;
         z-index: 0;
+        margin-top: 50px;
     }
     .mobNavText{
         position: static;
@@ -762,6 +763,16 @@ footer{
     .logo{
         position: absolute;
         display: none;
+    }
+
+    .location_adapt{
+        display: block;
+        position: static;
+    }
+
+    .logo-adapt{
+        display: block;
+        position: static;
     }
 
     .social-net{

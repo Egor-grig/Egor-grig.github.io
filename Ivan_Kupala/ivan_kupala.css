@@ -8,6 +8,10 @@ body{
     background-color: #FFFEF6;
 }
 
+main{
+    margin-top: 117px;
+}
+
 a{
     text-decoration: none;
 }
@@ -21,7 +25,7 @@ img{
 }
 
 
-.navigation{
+.navigation-container{
     display: flex;
     justify-content: center;
     gap: 120px;
@@ -31,13 +35,21 @@ img{
     background-color: #BE0F0F; 
     font-size: 32px;
     font-weight: 600;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
-header nav ul li a{color: #fff;}
+.navigation-container a{
+    color: #fff;
+}
 
-.rectangle-head{
+.navigation-ornament{
+    position: fixed;
+    top: 50px;
+    width: 100%;
     height: 25px;
+    z-index: 4;
     background-image: url("../img/Group 1.png");
-    margin-bottom: 20px;
 }
 
 .href-container{
@@ -255,20 +267,10 @@ main{
     margin-bottom: 1.3vw;
 }
 
-
 .video-rectangle{
     width: 90vw;
     margin-bottom: 5vw;
 }
-
-
-
-
-
-
-
-
-
 
 footer{
     background-color:#272727;
@@ -308,8 +310,366 @@ footer{
     margin-bottom: 20px;
 }
 
-
-@media all and (max-width: 1440px){
-    
-
+.nav-flex{
+    position: absolute;
+    display: none;
 }
+
+.logo-adapt{
+    position: absolute;
+    display: none;
+}
+
+.link-container-adapt{
+    display: none;
+}
+
+.holiday-container-adapt{
+    display: none;
+}
+
+.img-link-adapt{
+    display: none;
+}
+
+.logo-adapt{
+    position: absolute;
+    display: none;
+}
+
+.holiday-orn-adapt{
+    display: none;
+}
+
+.my-trip-adapt{
+    display: none;
+}
+
+.trip-cont-adapt{
+    display: none;
+}
+
+.section-two-adapt{
+    display: none;
+}
+
+.sec4-adapt{
+    display: none;
+}
+
+@media (max-width: 640px){
+    main{
+        overflow: visible;
+        margin-top: 16px;
+        margin-bottom: 50px;
+        font-weight: 500;
+    }
+
+    b{
+        font-weight: 700;
+    }
+    .navigation-container a{
+        position:absolute;
+        display: none;
+    }
+    .nav-flex{
+        display: flex;
+        position: static;
+        justify-content: space-between;
+    }
+
+    .navigation-container{
+        margin-bottom: 16px;
+        color: white;
+    }
+    .rec_video{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .video-container{
+        display: none;
+    }
+    .mobNavText{
+        position: static;
+        display: block;
+        font-family: 'SPSL RussiaChurch';
+        font-weight: 400;
+        font-size: 24px; 
+    }
+    .navigation-ornament{
+        position: absolute;
+        display: none;
+    }
+    .href-container{
+        display: none;
+    }
+
+    .link-container-adapt{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .link-container-adapt p{
+        font-family: SPSL RussiaChurch;
+        font-size: 126px;
+        line-height: 84%;
+        text-align: right;
+    }
+
+    .link-container-adapt img{
+        height: min-content;
+    }
+
+    .kaluga-text{
+        display: none;
+    }
+    .stone-img{
+        display: none;
+    }
+    .suzdal-img{
+        display: none;
+    }
+
+    .description-container{
+        width: 91vw;
+    }
+    .card-text{
+        font-family: TT Travels;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .suzdal-img-box{
+        width: 90%;
+    }
+
+    .holidays{
+        display: none;
+    }
+
+    .holiday-text-container{
+        width: 91vw;
+        margin-bottom: 50px;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .holiday-text{
+        font-family: SPSL RussiaChurch;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 100%;
+    }
+
+    .left-text{
+        font-family: TT Travels;
+        font-size: 16px;
+        line-height: 129%;
+        letter-spacing: 0%;
+        width: 91vw;
+    }
+
+    .right-text-container ul .left-text{
+        width: 97%;
+    }
+
+    .holiday-orn{
+        display: none;
+    }
+
+    .holiday-orn-adapt{
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .my-trip{
+        display: none;
+    }
+
+    .my-trip-adapt{
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    .my-trip-adapt p{
+        font-family: SPSL RussiaChurch;
+        font-weight: 400;
+        font-size: 96px;
+        line-height: 100%;
+    }
+
+    .my-trip-adapt .sec1{
+        display: flex;
+    }
+
+    .my-trip-adapt .sec1 img{
+        width: 100%;
+    }
+
+    .trip-container{
+        display: none;
+    }
+
+    .trip-cont-adapt{
+        display: block;
+    }
+
+    .trip-cont-adapt .par{
+        margin-bottom: 24px;
+    }
+    
+    .framed{
+        position: relative;
+    }
+
+    .framed p{
+        padding: 52px 48px;
+    }
+
+    .framed .img1{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .framed .img2{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .Shurovo-text{
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .br-off{
+        display: none;
+    }
+
+    .Shurovo-photos{
+        display: none;
+    }
+
+    .section-two{
+        display: none;
+    }
+
+    .section-two-adapt{
+        display: block;
+    }
+
+    .section-two-adapt p{
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+
+    .section-two-adapt img{
+        margin-bottom: 24px;
+    }
+
+    .section-third{
+        margin-bottom: 24px;
+    }
+
+    .section-third-photos{
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-bottom: 24px;
+    }
+
+    .section-third-photo{
+        width: 70vw;
+    }
+
+    .section-third-photo:first-child{
+        margin-right: 8px;
+    }
+
+    .section-third-text{
+        font-family: TT Travels;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .section-fourth-photos{
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-bottom: 24px;
+    }
+
+    .section-fourth-small:first-child{
+        display: none;
+    }
+
+    .section-fourth-photos img:not(:last-child){
+        margin-right: 8px;
+    }
+
+    .sec4-adapt{
+        display: block;
+        width: 85vw;
+    }
+
+    .section-fourth-center{
+        width: 85vw;
+    }
+
+    .section-fourth-small:last-child{
+        width: 41vw;
+    }
+
+    .section-fourth-text{
+        font-family: TT Travels;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .logo{
+        position: absolute;
+        display: none;
+    }
+
+    .logo-adapt{
+        display: block;
+        position: static;
+    }
+
+    .social-net{
+        position: absolute;
+        display: none;
+    }
+
+    .footer-list{
+        line-height: 32px;
+    }
+
+    .footer-list li{
+        font-size: 16px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footer-container{
+        height: auto;
+        padding: 24px 16px;
+    }
+}
+
