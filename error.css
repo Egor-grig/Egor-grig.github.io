@@ -184,6 +184,14 @@ footer{
 }
 
 @media (max-width: 640px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+
+    }
+
     .navigation-container .nav-item{
         position:absolute;
         display: none;
@@ -246,5 +254,71 @@ footer{
     .navigation-ornament{
         position: absolute;
         display: none;
+    }
+
+    .logo{
+        position: absolute;
+        display: none;
+    }
+
+    .location_adapt{
+        display: block;
+        position: static;
+    }
+
+    .logo-adapt{
+        display: block;
+        position: static;
+    }
+
+    .social-net{
+        position: absolute;
+        display: none;
+    }
+
+    .footer-list{
+        line-height: 32px;
+    }
+
+    .footer-list li{
+        font-size: 16px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footer-container{
+        height: auto;
+        padding: 24px 16px;
+    }
+
+    .error{
+        width: 68vw;
+    }
+
+    .error-404{
+        height: fit-content;
+    }
+
+    .button-return{
+        font-family: TT Travels;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 141%;
+        letter-spacing: 0%;
+        text-align: center; 
+        width: 57vw;
+    }
+
+    .error-text{
+        font-family: TT Travels;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 141%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: fit-content;
+
     }
 }
