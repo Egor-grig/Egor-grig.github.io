@@ -337,14 +337,53 @@ footer{
         margin-top: 16px;
         margin-bottom: 50px;
     }
-    .navigation-container a{
+    .navigation-container .nav-item{
         position:absolute;
         display: none;
     }
+
     .nav-flex{
+        width: 90vw;
         display: flex;
         position: static;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        justify-content: space-evenly;
+        scroll-behavior: smooth;
+    }
+
+    .nav-main_container{
+        display: flex;
         justify-content: space-between;
+        width: 90vw;
+    }
+
+    .open_menu{
+        font-family: TT Travels;
+        font-weight: 600;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .open-menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        margin: auto 0;
+    }
+
+    .chevron{
+        font-size: 30px;
+        padding: 8px 16px;
+        border: solid #BE0F0F 3px;
+        transition: background-color 0.3s;
+    }
+
+    .chevron:hover{
+        background-color: #272727;
+        color: white;
     }
 
     .navigation-container{

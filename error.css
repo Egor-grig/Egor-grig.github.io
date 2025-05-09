@@ -1,29 +1,29 @@
 @font-face {
     font-family: 'SPSL RussiaChurch';
-    src: url("../fonts/spslrussiachurch.otf") format("truetype");
+    src: url("fonts/spslrussiachurch.otf") format("truetype");
 }
 
 @font-face {
     font-family: 'TT Travels';
-    src: url("../fonts/TT_Travels-Regular.otf") format("opentype");
+    src: url("fonts/TT_Travels-Regular.otf") format("opentype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'TT Travels';
-    src: url("../fonts/TT_Travels-Medium.otf") format("opentype");
+    src: url("fonts/TT_Travels-Medium.otf") format("opentype");
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'TT Travels';
-    src: url("../fonts/TT_Travels-DemiBold.otf") format("opentype");
+    src: url("fonts/TT_Travels-DemiBold.otf") format("opentype");
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'TT Travels';
-    src: url("../fonts/TT_Travels-Bold.otf") format("opentype");
+    src: url("fonts/TT_Travels-Bold.otf") format("opentype");
     font-weight: 700;
 }
 
@@ -142,4 +142,109 @@ footer{
 }
 .telegram{
     margin-bottom: 20px;
+}
+
+.mobNavText{
+    position: absolute;
+    display: none;
+}
+
+.about_mobile{
+    position: absolute;
+    display: none;
+}
+
+.for-you-adapt{
+    position: absolute;
+    display: none;
+}
+
+.test-adapt{
+    position: absolute;
+    display: none;
+}
+
+.location_adapt{
+    position: absolute;
+    display: none;
+}
+
+.nav-flex{
+    position: absolute;
+    display: none;
+}
+
+.logo-adapt{
+    position: absolute;
+    display: none;
+}
+
+.video-adapt{
+    display: none;
+}
+
+@media (max-width: 640px){
+    .navigation-container .nav-item{
+        position:absolute;
+        display: none;
+    }
+
+    .nav-flex{
+        width: 90vw;
+        display: flex;
+        position: static;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        justify-content: space-evenly;
+        scroll-behavior: smooth;
+    }
+
+    .nav-main_container{
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+    }
+
+    .open_menu{
+        font-family: TT Travels;
+        font-weight: 600;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .open-menu-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90vw;
+        margin: auto 0;
+    }
+
+    .navigation-container{
+        margin-bottom: 16px;
+        color: white;
+    }
+
+    .rec_video{
+        display: flex;
+        align-items: center;
+    }
+    .video-container{
+        width: 90%;
+        margin-bottom: 0;
+        z-index: 0;
+        margin-top: 50px;
+    }
+    .mobNavText{
+        position: static;
+        display: block;
+        font-family: 'SPSL RussiaChurch';
+        font-weight: 400;
+        font-size: 24px; 
+    }
+    .navigation-ornament{
+        position: absolute;
+        display: none;
+    }
 }

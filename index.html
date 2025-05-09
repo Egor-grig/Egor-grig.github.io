@@ -16,15 +16,28 @@
 <body>
     <header>
         <nav class="navigation-container">
-                <a href="#"> О проекте </a>
-                <a href="#"> Карта </a>
-                <a href="#"> Для тебя </a>
-                <a href="#"> Контакты </a>
-                <div class="container nav-flex">
-                    <i class="fa fa-solid fa-bars"></i>
-                    <p class="mobNavText">Корни</p>
+            <a href="#" class="nav-item"> О проекте </a>
+            <a href="#" class="nav-item"> Карта </a>
+            <a href="#" class="nav-item"> Для тебя </a>
+            <a href="#" class="nav-item"> Контакты </a>
+            <div class="container nav-flex" id="menu">
+                <div class="main_menu" id="main-menu">
+                    <div class="nav-main_container">
+                        <i class="fa fa-solid fa-bars" id="menu_button"></i>
+                        <p class="mobNavText">Корни</p>
+                    </div>
                 </div>
-            </nav>
+                <div class="open_menu" id="open-menu">
+                    <div class="open-menu-container">
+                        <p class="mobNavText">Корни</p>
+                        <a href="#"> О проекте </a>
+                        <a href="#"> Карта </a>
+                        <a href="#"> Контакты </a>
+                        <img src="img/menu_back.png" alt="" id="back_button">
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="rec_video">
             <div class="navigation-ornament"></div>
             <video controls class="container video-container video-original">
@@ -276,5 +289,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>   
+    <script src="script.js"></script>
+    <script src="menu_script.js"></script>   
 </body>

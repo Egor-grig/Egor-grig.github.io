@@ -11,15 +11,28 @@
 <body>
     <header>
         <nav class="navigation-container">
-                <a href="#"> О проекте </a>
-                <a href="#"> Карта </a>
-                <a href="#"> Для тебя </a>
-                <a href="#"> Контакты </a>
-                <div class="container nav-flex">
-                    <i class="fa fa-solid fa-bars"></i>
-                    <p class="mobNavText">Корни</p>
+            <a href="#" class="nav-item"> О проекте </a>
+            <a href="#" class="nav-item"> Карта </a>
+            <a href="#" class="nav-item"> Для тебя </a>
+            <a href="#" class="nav-item"> Контакты </a>
+            <div class="container nav-flex" id="menu">
+                <div class="main_menu" id="main-menu">
+                    <div class="nav-main_container">
+                        <i class="fa fa-solid fa-bars" id="menu_button"></i>
+                        <p class="mobNavText">Корни</p>
+                    </div>
                 </div>
-            </nav>
+                <div class="open_menu" id="open-menu">
+                    <div class="open-menu-container">
+                        <p class="mobNavText">Корни</p>
+                        <a href="#"> О проекте </a>
+                        <a href="#"> Карта </a>
+                        <a href="#"> Контакты </a>
+                        <img src="../img/menu_back.png" alt="" id="back_button">
+                    </div>
+                </div>
+            </div>
+        </nav>
         <div class="rec_video">
             <div class="navigation-ornament"></div>
         </div>
@@ -27,7 +40,7 @@
     <main>
             <div class="href-container"><a href=".//kaluga.html">Карта</a>\\Калуга</div>
             <div class="container link-container-adapt">
-                <a href="../index.html"><img src="../img/ci_chevron-right.png" alt=""></a>
+                <a href="../index.html"><i class="fa-solid fa-chevron-left chevron"></a>
                 <p>Калуга</p>
             </div>
             <div class="second-container">
@@ -104,4 +117,5 @@
             </div>
         </div>
     </footer>
+    <script src="../menu_script.js"></script>   
 </body>
