@@ -288,6 +288,10 @@ footer{
     font-size: 24px;
     list-style: none;
 }
+.footer-list a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .logo{
     margin-right: 170px; 
@@ -557,5 +561,23 @@ footer{
     
     .ik-bg{
         background-image: url("../img/maslenitsa_adapt.png");
+    }
+
+    .footer-list li:nth-child(3) a::before{
+        content: "Города" ;
+        display: inline-block;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+    .pc-only {
+        display: none;
+    }
+    
+    .footer-list li.mobile-only a::before {
+        content: "Города";
+        font-weight: 500;
+        font-size: 16px;
     }
 }

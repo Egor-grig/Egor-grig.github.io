@@ -305,6 +305,10 @@ footer{
     font-size: 24px;
     list-style: none;
 }
+.footer-list a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .logo{
     margin-right: 170px; 
@@ -553,10 +557,14 @@ footer{
 
     .footer-list{
         line-height: 32px;
+        color: #fff;
+        text-decoration: none;
     }
 
     .footer-list li{
         font-size: 16px;
+        color: #fff;
+        text-decoration: none;
     }
 
     footer{
@@ -566,5 +574,23 @@ footer{
     .footer-container{
         height: auto;
         padding: 24px 16px;
+    }
+
+    .footer-list li:nth-child(3) a::before{
+        content: "Города" ;
+        display: inline-block;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+    .pc-only {
+        display: none;
+    }
+    
+    .footer-list li.mobile-only a::before {
+        content: "Города";
+        font-weight: 500;
+        font-size: 16px;
     }
 }

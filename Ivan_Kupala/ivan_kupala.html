@@ -11,10 +11,10 @@
 <body>
     <header>
         <nav class="navigation-container">
-            <a href="#" class="nav-item"> О проекте </a>
-            <a href="#" class="nav-item"> Карта </a>
-            <a href="#" class="nav-item"> Для тебя </a>
-            <a href="#" class="nav-item"> Контакты </a>
+            <a href="../index.html#about_project" class="nav-item"> О проекте </a>
+            <a href="../index.html#map_link" class="nav-item"> Карта </a>
+            <a href="../index.html#ofr_you_link" class="nav-item"> Для тебя </a>
+            <a href="../index.html#contacts_link" class="nav-item"> Контакты </a>
             <div class="container nav-flex" id="menu">
                 <div class="main_menu" id="main-menu">
                     <div class="nav-main_container">
@@ -25,9 +25,9 @@
                 <div class="open_menu" id="open-menu">
                     <div class="open-menu-container">
                         <p class="mobNavText">Корни</p>
-                        <a href="#"> О проекте </a>
-                        <a href="#"> Карта </a>
-                        <a href="#"> Контакты </a>
+                        <a href="../index.html#about_project_mob"> О проекте </a>
+                        <a href="../index.html#goroda"> Города </a>
+                        <a href="../index.html#contacts_link"> Контакты </a>
                         <img src="../img/menu_back.png" alt="" id="back_button">
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <img src="../img/holiday_orn.png" alt="" class="holiday-orn">
-                <img src="../img/орнамент_adapt.png" alt="" class="holiday-orn-adapt"">
+                <img src="../img/орнамент_adapt.png" alt="" class="holiday-orn-adapt">
                 <p class="my-trip"> мое путешествие </p>
                 <div class="my-trip-adapt">
                     <div class="sec1">
@@ -253,15 +253,31 @@
                     </p>
                 </div>
 
-                <img src="../img/video_rectangle.png" alt="" class="video-rectangle"> 
+                <div class="video-container pc">
+                    <iframe
+                    src="https://rutube.ru/play/embed/8dad0cf0b52ed852601c8e5bdf635363/" 
+                    frameBorder="0" 
+                    allow="clipboard-write; autoplay" 
+                    webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+                    </iframe>
+                </div>
+                <div class="video-container mobile-adapt">
+                    <iframe
+                    src="https://rutube.ru/play/embed/8dad0cf0b52ed852601c8e5bdf635363/" 
+                    frameBorder="0" 
+                    allow="clipboard-write; autoplay" 
+                    webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+                    </iframe>
+                </div>
             </div>
     </main>
     <footer>
         <div class="container footer-container">
             <ul class="footer-list">
-                <li> О проекте </li>
-                <li> Карта </li>
-                <li> Сотрудничество </li>
+                <li> <a href="../index.html#about_project">О проекте</a></li>
+                <li class="pc-only"> <a href="../index.html#map_link">Карта</a>  </li>
+                <li class="mobile-only"> <a href="../index.html#goroda"></a>  </li>
+                <li> <a href="https://t.me/rudikrdk">Сотрудничество </a> </li>
             </ul>
             <img src="../img/лого 2.png" alt="" class="logo">
             <img src="../img/logo-adapt.png" alt="" class="logo-adapt">

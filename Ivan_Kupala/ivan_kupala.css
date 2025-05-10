@@ -323,6 +323,21 @@ footer{
     font-size: 24px;
     list-style: none;
 }
+.footer-list a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-container{
+    width: 100%;
+}
+iframe{
+    width: 90vw;
+    height: 40vw;
+}
+
+
+
 
 .logo{
     margin-right: 170px; 
@@ -386,6 +401,10 @@ footer{
     display: none;
 }
 
+.mobile-adapt{
+    display: none;
+}
+
 @media (max-width: 640px){
     main{
         overflow: visible;
@@ -400,6 +419,14 @@ footer{
     .navigation-container .nav-item{
         position:absolute;
         display: none;
+    }
+
+
+    .video-container.pc {
+        display: none;
+    }
+    .video-container.mobile-adapt {
+        display: block;
     }
 
     .nav-flex{
@@ -538,12 +565,24 @@ footer{
         line-height: 100%;
     }
 
+    .left-text-container{
+        border: 2px solid #BE0F0F;
+        padding: 10px;
+    }
+
+    .right-text-container{
+        border: 2px solid #BE0F0F;
+        padding: 10px;
+    }
+
+
     .left-text{
         font-family: 'TT Travels';
         font-size: 16px;
         line-height: 129%;
         letter-spacing: 0%;
         width: 80vw;
+        
     }
 
     .right-text-container ul .left-text{
@@ -748,6 +787,25 @@ footer{
     .footer-container{
         height: auto;
         padding: 24px 16px;
+    }
+
+
+    .footer-list li:nth-child(3) a::before{
+        content: "Города" ;
+        display: inline-block;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+    .pc-only {
+        display: none;
+    }
+    
+    .footer-list li.mobile-only a::before {
+        content: "Города";
+        font-weight: 500;
+        font-size: 16px;
     }
 }
 

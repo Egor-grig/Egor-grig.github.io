@@ -301,6 +301,21 @@ footer{
     font-size: 24px;
     list-style: none;
 }
+.footer-list a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-container{
+    width: 100%;
+}
+iframe{
+    width: 90vw;
+    height: 40vw;
+}
+.mobile-adapt{
+    display: none;
+}
 
 .logo{
     margin-right: 170px; 
@@ -378,6 +393,20 @@ footer{
 
     b{
         font-weight: 700;
+    }
+    .video-container.pc {
+        display: none;
+    }
+    .video-container.mobile-adapt {
+        display: block;
+    }
+    .left-text-container{
+        border: 2px solid #BE0F0F;
+        padding: 10px;
+    }
+    .right-text-container{
+        border: 2px solid #BE0F0F;
+        padding: 10px;
     }
 
     .img_off{
@@ -743,5 +772,22 @@ footer{
     .footer-container{
         height: auto;
         padding: 24px 16px;
+    }
+    .footer-list li:nth-child(3) a::before{
+        content: "Города" ;
+        display: inline-block;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+    .pc-only {
+        display: none;
+    }
+    
+    .footer-list li.mobile-only a::before {
+        content: "Города";
+        font-weight: 500;
+        font-size: 16px;
     }
 }
