@@ -488,6 +488,17 @@ footer{
 .video-adapt{
     display: none;
 }
+.mobile-only {
+    display: none;
+}
+.footer-list li.mobile-only a {
+font-weight: 500;
+font-size: 24px;
+}
+.footer-list li {
+    list-style: none;
+    color: white;
+}
 
 @media (max-width: 640px){
     main{
@@ -887,5 +898,24 @@ footer{
     .footer-container{
         height: auto;
         padding: 24px 16px;
+    }
+
+
+    .footer-list li:nth-child(3) a::before{
+        content: "Города" ;
+        display: inline-block;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+    .pc-only {
+        display: none;
+    }
+    
+    .footer-list li.mobile-only a::before {
+        content: "Города";
+        font-weight: 500;
+        font-size: 16px;
     }
 }
