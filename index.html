@@ -16,10 +16,10 @@
 <body>
     <header>
         <nav class="navigation-container">
-            <a href="#" class="nav-item"> О проекте </a>
-            <a href="#" class="nav-item"> Карта </a>
-            <a href="#" class="nav-item"> Для тебя </a>
-            <a href="#" class="nav-item"> Контакты </a>
+            <a href="#about_project" class="nav-item"> О проекте </a>
+            <a href="#map_link" class="nav-item"> Карта </a>
+            <a href="#for_you_link" class="nav-item"> Для тебя </a>
+            <a href="#contacts_link" class="nav-item"> Контакты </a>
             <div class="container nav-flex" id="menu">
                 <div class="main_menu" id="main-menu">
                     <div class="nav-main_container">
@@ -40,12 +40,28 @@
         </nav>
         <div class="rec_video">
             <div class="navigation-ornament"></div>
-            <video controls class="container video-container video-original">
+            <!-- <video controls class="container video-container video-original">
                 <source src="img/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4">
-            </video>
-            <video controls class="container video-container video-adapt">
+            </video> -->
+            <!-- <video controls class="container video-container video-adapt">
                 <source src="img/RickAdapt.mp4">
-            </video>
+            </video> -->
+            <div class="container video-container video-original">
+                <iframe
+                src="https://rutube.ru/play/embed/83d69b7648bfc175418b4912d24e0beb/?p=6cXlnofp1KcY-FScMBhSBQ" 
+                frameBorder="0" 
+                allow="autoplay; clipboard-write" 
+                webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+                </iframe>
+            </div>
+            <div class="container video-container video-adapt">
+                <iframe
+                src="https://rutube.ru/play/embed/5317ce5fa3836adf9dd9da843e655b92/?p=Jy6stZ0he8MDKky_kJJIhg" 
+                frameBorder="0" 
+                allow="autoplay; clipboard-write" 
+                webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+                </iframe>
+            </div>
         </div>
     </header>
     <main>
@@ -56,7 +72,7 @@
             <p class="author-title">австрийский композитор и режиссер </p>
             <div class="img/ellipse"></div>
         </div>
-        <div class="pattern-1"></div>
+        <div class="pattern-1" id="about_project"></div>
         <div class="container about">
             <img src="img/frameSpring.png" alt="" class="about-img about-spring">
             <div class="about-text">
@@ -190,17 +206,25 @@
                 </div>
             </section>
         </div>
-        <div class="container map">
+        <div class="container map" id="map_link">
             <p class="map-text">Карта</p>
-            <img src="img/map.png" alt="">
-            <div class="dots">
-                <div class="suzdal flex">
+            <div class="svg-map-container">
+                <svg class="svg-map" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+                    <image class="map_img" href="img/download.svg" width="100%" height="100%"/>
+                    <a href="Suzdal/suzdal.html" class="city-hitbox" x="150" y="300">
+                        <circle cx="150" cy="300" r="15" fill="transparent"/>
+                    </a>
+                    <a href="Kaluga/kaluga.html" class="city-hitbox" x="250" y="250">
+                        <circle cx="250" cy="250" r="15" fill="transparent"/>
+                    </a>
+                </svg>
+                <div class="suzdal flex city-point" style="left: 16vw; top: 21vw;">
                     <p>Суздаль</p>
                     <a href="Suzdal/suzdal.html">
                         <i class="fa fa-light fa-circle"></i>
                     </a>
                 </div>
-                <div class="kaluga flex">
+                <div class="kaluga flex city-point" style="left: 13vw; top: 25vw;">
                     <a href="Kaluga/kaluga.html">
                         <i class="fa fa-light fa-circle"></i>
                     </a>
@@ -232,7 +256,7 @@
             </div>
         </div>
         <div class="pattern-1"></div>
-        <div class="container">
+        <div class="container" id="for_you_link">
             <div class="for-you">
                 <img src="img/left.png" alt="">
                 <p>Для тебя</p>
@@ -259,7 +283,7 @@
                 </div>
             </div>
         </div>
-        <div class="container contacts">
+        <div class="container contacts" id="contacts_link">
             <img src="img/bird.png" alt="" class="bird">
             <div class="texts">
                 <p class="churchtext">Контакты</p>
@@ -272,9 +296,9 @@
     <footer>
         <div class="container footer-container">
             <ul class="footer-list">
-                <li> О проекте </li>
-                <li> Карта </li>
-                <li> Сотрудничество </li>
+                <li> <a href="#about_project">О проекте</a></li>
+                <li> <a href="#map_link">Карта</a>  </li>
+                <li> <a href="https://t.me/rudikrdk">Сотрудничество </a> </li>
             </ul>
             <img src="img/лого 2.png" alt="" class="logo">
             <img src="img/logo-adapt.png" alt="" class="logo-adapt">

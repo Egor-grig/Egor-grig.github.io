@@ -96,3 +96,15 @@ var swiper = new Swiper(".swiper", {
     },
   }
 });
+
+document.querySelectorAll('.texts a').forEach(link => {
+  link.addEventListener('mouseenter', () => {
+      document.querySelector('.bird').style.transform = 'translateX(30px)';
+      document.querySelector('.mirrored').style.transform = 'scaleX(-1) translateX(30px)';
+  });
+  
+  link.addEventListener('mouseleave', () => {
+      document.querySelector('.bird').style.transform = 'translateX(0)';
+      document.querySelector('.mirrored').style.transform = 'scaleX(-1) translateX(0)';
+  });
+});

@@ -105,6 +105,19 @@ main{
     margin-bottom: 20px;
     z-index: -1;
 }
+iframe{
+    width: 100%;
+    height: 56vw;
+    object-fit: fill;
+}
+
+.video-adapt iframe {
+    height: 73vh; /* На всю высоту экрана */
+    width: 90vh; /* 16:9 (ширина = 177.78% от высоты) */
+    max-width: 100%; /* Чтобы не выходило за границы */
+    min-height: 0;
+    left: 50%; /* Центрируем */
+}
 
 
 
@@ -258,9 +271,8 @@ main{
     margin-bottom: 100px;
 }
 
-.map img{
-    width: 80vw;
-    margin: 0 auto;
+.map_img{
+    color: #BE0F0F;
 }
 
 .map-text{
@@ -269,8 +281,18 @@ main{
     font-size: 128px;
     align-self: flex-start;
 }
+.svg-map {
+    width: 100%;
+    height: 100%;
+}
 
-.dots{
+.svg-map-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.city-point{
     color: white;
 }
 
@@ -384,6 +406,11 @@ main{
 .mirrored{
     transform: scaleX(-1);
 }
+
+.bird, .mirrored{
+    transition: all 0.5s ease-in-out;
+}
+
 
 footer{
     background-color:#272727;
