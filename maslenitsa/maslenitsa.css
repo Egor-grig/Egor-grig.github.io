@@ -719,6 +719,8 @@ iframe{
 
     .Shurovo-photo{
         width: 100%;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .Shurovo-photos .photo-2{
@@ -751,6 +753,10 @@ iframe{
     }
 
     .section-third{
+        margin-bottom: 24px;
+    }
+
+    .section-third-text{
         margin-bottom: 24px;
     }
 
@@ -809,6 +815,11 @@ iframe{
         font-size: 16px;
         line-height: 100%;
         letter-spacing: 0%;
+        margin-bottom: 24px;
+    }
+
+    .fifth-left{
+        margin-bottom: 24px;
     }
 
     .logo{
