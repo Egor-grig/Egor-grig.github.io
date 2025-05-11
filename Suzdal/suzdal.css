@@ -216,39 +216,98 @@ main{
     height: 41vw;
 }
 
-.ik-bg{
+.ik-bg {
     position: relative;
     margin-bottom: 16px;
     background-image: url("../img/Rectangle 30.png");
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 
+        background-size 3s cubic-bezier(0.05, 0.65, 0.18, 0.99),
+        transform 3s cubic-bezier(0.05, 0.65, 0.18, 0.99);
+    will-change: background-size, transform;
 }
 
-.ik-bg::before{
-    width: 44vw;
-    height: 41vw;
+.ik-bg::after { 
     content: '';
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Rectangle 30.png");
+    background-size: 100% auto;
+    background-position: center;
     background-repeat: no-repeat;
+    transition: all 2s cubic-bezier(0.1, 0.7, 0.1, 1);
 }
 
-.sv-bg{
+.ik-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: background-color 2s ease;
+}
+
+.ik-bg:hover::after {
+    background-size: 120% auto;
+    background-position: center;
+}
+
+.ik-bg:hover::before {
+    background-color: rgba(0, 0, 0, 0);
+}
+.sv-bg {
     position: relative;
     margin-bottom: 16px;
-    background-image: url("../img/Rectangle 29.png");
+    background-image:  url("../img/Rectangle 29.png");
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 
+        background-size 3s cubic-bezier(0.05, 0.65, 0.18, 0.99),
+        transform 3s cubic-bezier(0.05, 0.65, 0.18, 0.99);
+    will-change: background-size, transform;
 }
-
-.sv-bg::before{
-    width: 44vw;
-    height: 41vw;
+.sv-bg::after { 
     content: '';
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:  url("../img/Rectangle 29.png");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 2s cubic-bezier(0.1, 0.7, 0.1, 1);
+}
+
+.sv-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
+    transition: background-color 2s ease;
+}
+
+.sv-bg:hover::after {
+    background-size: 120% auto;
+    background-position: center;
+}
+
+.sv-bg:hover::before {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .img-text{
@@ -324,7 +383,9 @@ footer{
 .telegram{
     margin-bottom: 20px;
 }
-
+.hrc{
+    text-decoration: underline;
+}
 .nav-flex{
     position: absolute;
     display: none;

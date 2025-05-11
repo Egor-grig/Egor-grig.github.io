@@ -53,6 +53,9 @@ img{
     margin: 0 auto;
 }
 
+.hrc{
+    text-decoration: underline;
+}
 
 .navigation-container{
     display: flex;
