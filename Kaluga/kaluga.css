@@ -390,6 +390,9 @@ footer{
     .ik-bg::after{
         display: none;
     }
+    .second-image{
+        display: none;
+    }
 
     .nav-flex{
         width: 90vw;
