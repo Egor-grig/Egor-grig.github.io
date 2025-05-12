@@ -310,6 +310,7 @@ main{
     background-color: rgba(0, 0, 0, 0);
 }
 
+
 .img-text{
     position: relative;
     font-weight: 700;
@@ -423,6 +424,7 @@ footer{
         position:absolute;
         display: none;
     }
+
 
     .nav-flex{
         width: 90vw;
@@ -577,6 +579,11 @@ footer{
     .sv-bg::before{
         width: 91vw;
         height: 96vw;
+    }
+
+    .ik-bg::after,
+    .sv-bg::after {
+        display: none;
     }
 
     .img-text{
