@@ -536,7 +536,7 @@ footer{
 
     .img-link{
         width: 91vw;
-        height: 96vw;
+        height: 86vw;
         margin-bottom: 6px;
     }
 
@@ -609,6 +609,7 @@ footer{
     
     .ik-bg{
         background-image: url("../img/maslenitsa_adapt.png");
+        overflow: hidden;
     }
 
     .footer-list li:nth-child(3) a::before{
