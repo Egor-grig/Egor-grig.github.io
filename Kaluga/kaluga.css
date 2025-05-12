@@ -536,8 +536,9 @@ footer{
 
     .img-link{
         width: 91vw;
-        height: 86vw;
+        height: 80vw;
         margin-bottom: 6px;
+        overflow: hidden;
     }
 
     .ik-bg::before{
