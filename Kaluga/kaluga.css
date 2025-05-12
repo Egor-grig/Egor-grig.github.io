@@ -387,6 +387,10 @@ footer{
         display: none;
     }
 
+    .ik-bg::after{
+        display: none;
+    }
+
     .nav-flex{
         width: 90vw;
         display: flex;
